@@ -37,13 +37,7 @@ void Robot::DisabledPeriodic() {
 
 
 void Robot::AutonomousInit() {
-	// std::string autoSelected = frc::SmartDashboard::GetString(
-	// 		"Auto Selector", "Default");
-	// if (autoSelected == "My Auto") {
-	// 	m_autonomousCommand = &m_myAuto;
-	// } else {
-	// 	m_autonomousCommand = &m_defaultAuto;
-	// }
+
 
 	m_autonomousCommand = m_chooser.GetSelected();
 
